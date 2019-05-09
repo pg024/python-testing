@@ -1,13 +1,13 @@
 #First python script. 
-#It reads a file and prints the content.
+#It reads a file passed as argument and prints the content.
 
-import sys from argv
+from sys import argv
 
-filename = argv
+script, filename = argv
 
-x = open(filename, w)
+x = open(filename)
+
 print(x.read())
 x.close()
 
 print("Bye!")
-
