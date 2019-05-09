@@ -10,4 +10,15 @@ x = open(filename)
 print(x.read())
 x.close()
 
-print("Bye!")
+print("Do you want me to open it again?\nYes/No")
+inp=input()
+if (inp == 'Yes'):
+  x = open(filename)
+  print(x.read())
+  x.close()
+elif (inp == 'No'):
+  print("nothing to see here! Bye.")
+else:
+  print("Specify Yes or No, press Ctrl + C to abort")
+
+  
