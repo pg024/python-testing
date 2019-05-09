@@ -27,10 +27,14 @@ file.write("\n")
 file.write(line3)
 file.write("\n")
 
+file.close()
+file = open(filename)
+
 print("Reading file:")
 print(file.read())
 
 print("Closing it, bye!")
 file.close()
        
+  
   
